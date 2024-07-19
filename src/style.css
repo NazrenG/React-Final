@@ -1,0 +1,96 @@
+/*llllllllllllll*/
+/* src/styles.css */
+
+nav {
+  margin-bottom: 20px;
+}
+.card_review {
+  width: 300px;
+}
+.review {
+  width: 85vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  img {
+    width: 290px;
+  }
+
+  font-weight: 100;
+}
+.review_list {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.review_card {
+  margin-bottom: 15px;
+}
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wheel {
+  width: 800px;
+  height: 800px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.spin-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.ul {
+  grid-template-columns: 35vw 50vw;
+  text-align: start;
+  padding: 100px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid rgb(44, 108, 108);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  align-items: center;
+  transition: all 0.5s;
+  font-weight: bolder;
+  color: black;
+}
+/* other css*/
+.active {
+  background-color: black;
+}
+.div {
+  display: grid;
+  width: 1080px;
+  grid-template-columns: 50% 50%;
+  position: relative;
+}
+.inward-curve {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  overflow: hidden;
+}
+
+.inward-curve::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-color: #3498db;
+  border-radius: 50%;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
